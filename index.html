@@ -3,10 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Magic 8 Ball</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Magic 8-Ball</h1>
+        </div>
+        <div class="response-container" id="response-container">
+            Ask a question and click the button to reveal the answer.
+        </div>
+        <button class="btn btn-primary btn-lg btn-block" onclick="getRandomResponse()">Ask the Magic 8-Ball</button>
+
+
+        <script>
+            function getRandomResponse() {
+                var responses = [
+                    "It is certain",
+                    "It is decidedly so",
+                    "Without a doubt",
+                    "Yes, definitely",
+                    "You may rely on it",
+                    "As I see it, yes",
+                    "Most likely",
+                    "Outlook good",
+                    "Yes",
+                    "Signs point to yes",
+                    "Reply hazy, try again",
+                    "Ask again later",
+                    "Better not tell you now",
+                    "Cannot predict now",
+                    "Concentrate and ask again",
+                    "Don't count on it",
+                    "My reply is no",
+                    "My sources say no",
+                    "Outlook not so good",
+                    "Very doubtful"
+                ];
+    
+                var randomIndex = Math.floor(Math.random() * responses.length);
+                var response = responses[randomIndex];
+    
+                var responseContainer = document.getElementById('response-container');
+                responseContainer.textContent = response;
+            }
+        </script>
     
 </body>
 </html>
