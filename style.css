@@ -1,5 +1,5 @@
 body {
-    background-color: #f0f0f0;
+    background-color: #8485bd;
     font-family: 'Arial', sans-serif;
 }
 h1{
@@ -10,8 +10,8 @@ h1{
 .header {
     text-align: center;
     padding: 20px;
-    background-color: #333;
-    color: white;
+    background-color: #ffffff;
+    color: rgb(54, 43, 43);
 }
 
 .container {
@@ -19,7 +19,7 @@ h1{
 }
 
 .response-container {
-    border: 2px solid #333;
+    border: 2px solid #ffffff;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -29,17 +29,20 @@ h1{
     font-family: "Just Me Again Down Here", cursive;
   font-weight: 400;
   font-style: normal;
+  color: rgb(255, 255, 255);
 }
 
 .btn-primary {
     font-family: "Macondo Swash Caps", cursive;
     font-weight: 400;
     font-style: normal;
-    background-color: #333;
-    border-color: #333;
+    background-color: #ffffff;
+    border-color: #504d4d;
+    color: rgb(54, 43, 43);
 }
 
 .btn-primary:hover {
-    background-color: #555;
-    border-color: #555;
+    background-color: #eee7e7;
+    border-color: #0c0c0c;
+    color: rgb(0, 0, 0);
 }
